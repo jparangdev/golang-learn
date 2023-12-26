@@ -10,4 +10,6 @@ func main() {
 	basic.VariableExample()
 	fmt.Println("======================================")
 	basic.FmtExample()
+	fmt.Println("======================================")
+	basic.OperatorExample()
 }
