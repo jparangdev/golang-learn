@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"studyProject/basic"
+	"golang-learn/basic"
 )
 
 func main() {

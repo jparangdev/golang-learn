@@ -1,1 +1,1 @@
-module studyProject
+module golang-learn
