@@ -22,4 +22,6 @@ func main() {
 	d, success := basic.Divide(9, 0)
 	fmt.Println(d, success)
 	basic.PrintNo(4)
+	fmt.Println("======================================")
+	basic.ConstExample(2)
 }
