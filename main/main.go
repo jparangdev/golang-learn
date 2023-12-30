@@ -24,4 +24,7 @@ func main() {
 	basic.PrintNo(4)
 	fmt.Println("======================================")
 	basic.ConstExample(2)
+	fmt.Println("======================================")
+	basic.ForExample()
+	fmt.Println("======================================")
 }
