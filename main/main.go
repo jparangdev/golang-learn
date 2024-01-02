@@ -29,4 +29,6 @@ func main() {
 	fmt.Println("======================================")
 	basic.ArrayExample()
 	fmt.Println("======================================")
+	basic.StructExample()
+	fmt.Println("======================================")
 }
