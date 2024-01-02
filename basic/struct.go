@@ -54,9 +54,9 @@ func StructExample() {
 	}
 
 	// Print the properties of 'user'
-	fmt.Println("User: %s ID: %s Age: %d\n", user.Name, user.ID, user.Age)
+	fmt.Printf("User: %s ID: %s Age: %d\n", user.Name, user.ID, user.Age)
 	// Print the properties of 'vip'
-	fmt.Println("VIP User: %s ID: %s Age: %d VIP Lv: %d VIP price : %d\n",
+	fmt.Printf("VIP User: %s ID: %s Age: %d VIP Lv: %d VIP price : %d\n",
 		vip.Name,
 		vip.ID,
 		vip.Age,
