@@ -1,5 +1,6 @@
 # Go Language Learning Project
 
-This project is designed as a study resource for learning the Go programming language.
+This is a learning project based on the book "Tucker의 Go 언어 프로그래밍".
 
 thanks tucker!
+
