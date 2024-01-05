@@ -31,4 +31,6 @@ func main() {
 	fmt.Println("======================================")
 	basic.StructExample()
 	fmt.Println("======================================")
+	basic.PointerExample()
+	fmt.Println("======================================")
 }
