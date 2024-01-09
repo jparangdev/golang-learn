@@ -35,4 +35,6 @@ func main() {
 	fmt.Println("======================================")
 	basic.StringsExample()
 	fmt.Println("======================================")
+	basic.PackageExample()
+	fmt.Println("======================================")
 }
