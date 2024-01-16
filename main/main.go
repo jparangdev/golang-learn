@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"golang-learn/basic"
-	"golang-learn/numberguess"
 )
 
 func main() {
@@ -38,5 +37,7 @@ func main() {
 	fmt.Println("======================================")
 	basic.PackageExample()
 	fmt.Println("======================================")
-	numberguess.Game()
+	//numberguess.Game()
+	fmt.Println("======================================")
+	basic.SliceExample()
 }
