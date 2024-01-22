@@ -40,4 +40,6 @@ func main() {
 	//numberguess.Game()
 	fmt.Println("======================================")
 	basic.SliceExample()
+	fmt.Println("======================================")
+	basic.SlicingExample()
 }
