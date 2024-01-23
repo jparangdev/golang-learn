@@ -8,6 +8,6 @@ thanks tucker!
 To run a file, use go run <file>.go in the terminal.
 Where <file> is the name of your Go file.
 
-[ ] Basic
-[ ] Number guess Game
-[ ] Web project
+[] Basic
+[] Number guess Game
+[] Web project
