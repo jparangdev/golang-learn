@@ -8,6 +8,29 @@ thanks tucker!
 To run a file, use go run <file>.go in the terminal.
 Where <file> is the name of your Go file.
 
-[ ] Basic
-[ ] Number guess Game
-[ ] Web project
+- [X] Variable
+- [X] fmt Package
+- [X] Operator
+- [X] Function
+- [X] Constants
+- [X] If/For
+- [X] Switch
+- [X] Arrays
+- [X] Struct
+- [X] Pointer
+- [X] String
+- [X] Package
+- [X] Number guess Game
+- [ ] Slice
+- [ ] Method
+- [ ] Interface
+- [ ] Fuction 2
+- [ ] Data
+- [ ] Error Handling
+- [ ] Gorutine and Concurrency
+- [ ] Channel and Context
+- [ ] Keyword seach
+- [ ] Test
+- [ ] Web Server
+- [ ] Rest API
+- [ ] Todo List
