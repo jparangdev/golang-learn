@@ -21,8 +21,8 @@ Where <file> is the name of your Go file.
 - [X] String
 - [X] Package
 - [X] Number guess Game
-- [ ] Slice
-- [ ] Method
+- [X] Slice
+- [X] Method
 - [ ] Interface
 - [ ] Fuction 2
 - [ ] Data
