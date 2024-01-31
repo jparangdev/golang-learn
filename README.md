@@ -24,10 +24,10 @@ Where <file> is the name of your Go file.
 - [X] Slice
 - [X] Method
 - [ ] Interface
-- [ ] Fuction 2
+- [ ] Function 2
 - [ ] Data
 - [ ] Error Handling
-- [ ] Gorutine and Concurrency
+- [ ] GoRutine and Concurrency
 - [ ] Channel and Context
 - [ ] Keyword seach
 - [ ] Test
