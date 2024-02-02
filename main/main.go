@@ -44,4 +44,6 @@ func main() {
 	basic.SlicingExample()
 	fmt.Println("======================================")
 	basic.MethodExample()
+	fmt.Println("======================================")
+	basic.InterfaceExample()
 }
