@@ -23,7 +23,7 @@ Where <file> is the name of your Go file.
 - [X] Number guess Game
 - [X] Slice
 - [X] Method
-- [ ] Interface
+- [X] Interface
 - [ ] Function 2
 - [ ] Data
 - [ ] Error Handling

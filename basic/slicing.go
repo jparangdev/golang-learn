@@ -10,6 +10,10 @@ type Student struct {
 	Age  int
 }
 
+func (s *Student) String() string {
+	return fmt.Sprintf("Student Name is %s and age is %d", s.Name, s.Age)
+}
+
 type Students []Student
 
 func (s Students) Len() int           { return len(s) }
