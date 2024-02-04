@@ -12,6 +12,10 @@ func Function2Example() {
 	defferExample()
 }
 
+/*
+This function, sum, is an example of how to define a function that can receive a variable number of arguments in Go.
+The nums ...int parameter allows the function to accept any number of int arguments.
+*/
 func sum(nums ...int) int {
 	total := 0
 	for _, num := range nums {
@@ -20,6 +24,16 @@ func sum(nums ...int) int {
 	return total
 }
 
+/*
+The defer keyword in Go is used to schedule a function call (the deferred function) to be run immediately before the function that the defer statement is in returns.
+It's typically used to perform cleanup tasks such as closing files, network connections, or database connections.
+In the defferExample function, three deferred function calls are scheduled:
+fmt.Println("first?") is the first deferred call,
+and therefore will be the last one to be executed when defferExample returns.
+f.Close() is scheduled second, and so will be execute just before fmt.Println("first?").
+fmt.Println("last?") is the third deferred call, which means it will be the first one to execute among these three deferred calls when defferExample returns.
+Essentially, defer calls are placed on a stack and then popped off in a LIFO (last-in-first-out) order when the function returns.
+*/
 func defferExample() {
 	f, err := os.Create("deffer.txt")
 	if err != nil {
