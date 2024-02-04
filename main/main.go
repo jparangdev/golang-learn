@@ -46,4 +46,6 @@ func main() {
 	basic.MethodExample()
 	fmt.Println("======================================")
 	basic.InterfaceExample()
+	fmt.Println("======================================")
+	basic.Function2Example()
 }
