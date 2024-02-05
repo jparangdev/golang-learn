@@ -29,7 +29,7 @@ Where <file> is the name of your Go file.
 - [ ] Error Handling
 - [ ] GoRutine and Concurrency
 - [ ] Channel and Context
-- [ ] Keyword seach
+- [ ] Keyword search
 - [ ] Test
 - [ ] Web Server
 - [ ] Rest API
