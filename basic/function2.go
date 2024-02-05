@@ -10,6 +10,14 @@ func Function2Example() {
 	fmt.Println(sum(6, 7, 8))
 
 	defferExample()
+	fn := getOperator("+")
+	fmt.Println(fn(1, 2))
+	fn = getOperator("*")
+	fmt.Println(fn(3, 4))
+	fn = getOperator("%")
+	fmt.Println(fn)
+	CaptureLoop1()
+	CaptureLoop2()
 }
 
 /*
@@ -47,4 +55,69 @@ func defferExample() {
 
 	fmt.Println("write Hello world on file")
 	fmt.Fprintln(f, "Hello world")
+}
+
+/*
+Using abbreviations, we can simplify the usage of functions as variables.
+*/
+type opFunc func(int, int) int
+
+/*
+this function is takes a string as an arguments and returns a function that performs the corresponding operation.
+'opFunc' is an abbreviation for a type of function above
+*/
+func getOperator(op string) opFunc {
+	switch op {
+	case "+":
+		return func(a, b int) int {
+			return a + b
+		}
+	case "*":
+		return func(a, b int) int {
+			return a * b
+		}
+	default:
+		return nil
+	}
+}
+
+/*
+The functions 'CaptureLoop1' and 'CaptureLoop2' demonstrate important aspects
+of variable scope and lifetimes within closures and loops
+
+In 'CaptureLoop1' function, we see that 'i' is in the scope of the for loop.
+As a result, all the function literals created within the loop refer to the same instance of 'i'
+this is a consequence of pointer copying, and all functions end up sharing the final value of 'i'
+
+In contrast, in 'CaptureLoop2' each iteration creates a new instance of 'v',
+so each function literal captures a separate 'v' instance. Due to this value copy, each function prints a distinct value
+*/
+
+func CaptureLoop1() {
+	f := make([]func(), 3)
+	fmt.Println("value loop")
+	for i := 0; i < 3; i++ {
+		f[i] = func() {
+			fmt.Println(i)
+		}
+	}
+
+	for i := 0; i < 3; i++ {
+		f[i]()
+	}
+}
+
+func CaptureLoop2() {
+	f := make([]func(), 3)
+	fmt.Println("value loop2")
+	for i := 0; i < 3; i++ {
+		v := i
+		f[i] = func() {
+			fmt.Println(v)
+		}
+	}
+
+	for i := 0; i < 3; i++ {
+		f[i]()
+	}
 }
