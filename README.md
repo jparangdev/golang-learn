@@ -24,7 +24,7 @@ Where <file> is the name of your Go file.
 - [X] Slice
 - [X] Method
 - [X] Interface
-- [ ] Function 2
+- [X] Function 2
 - [ ] Data Structure
 - [ ] Error Handling
 - [ ] GoRutine and Concurrency
