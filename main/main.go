@@ -48,4 +48,9 @@ func main() {
 	basic.InterfaceExample()
 	fmt.Println("======================================")
 	basic.Function2Example()
+	fmt.Println("======================================")
+	basic.ListExample()
+	basic.QueueExample()
+	basic.StackExample()
+	basic.MapExample()
 }
