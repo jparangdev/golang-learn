@@ -5,10 +5,6 @@ import (
 	"fmt"
 )
 
-func DataStructExample() {
-	ListExample()
-}
-
 // ListExample is a function that demonstrates the usage of the list package in Go.
 //
 // It creates a new doubly-linked list,
