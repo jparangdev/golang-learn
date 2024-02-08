@@ -53,4 +53,7 @@ func main() {
 	basic.QueueExample()
 	basic.StackExample()
 	basic.MapExample()
+	fmt.Println("======================================")
+	basic.ErrorExample()
+
 }
