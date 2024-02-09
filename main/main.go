@@ -55,5 +55,6 @@ func main() {
 	basic.MapExample()
 	fmt.Println("======================================")
 	basic.ErrorExample()
+	basic.PanicExample()
 
 }
