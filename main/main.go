@@ -56,5 +56,7 @@ func main() {
 	fmt.Println("======================================")
 	basic.ErrorExample()
 	basic.PanicExample()
+	fmt.Println("======================================")
+	basic.GoroutineExample()
 
 }

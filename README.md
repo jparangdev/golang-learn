@@ -27,7 +27,7 @@ Where <file> is the name of your Go file.
 - [X] Function 2
 - [X] Data Structure
 - [ ] Error Handling
-- [ ] GoRutine and Concurrency
+- [ ] Goroutine and Concurrency
 - [ ] Channel and Context
 - [ ] Keyword search
 - [ ] Test
