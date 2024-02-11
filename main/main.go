@@ -58,5 +58,7 @@ func main() {
 	basic.PanicExample()
 	fmt.Println("======================================")
 	basic.GoroutineExample()
+	basic.MutexExample()
+	basic.ConcurrencyExample()
 
 }
