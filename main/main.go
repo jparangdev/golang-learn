@@ -60,5 +60,7 @@ func main() {
 	basic.GoroutineExample()
 	basic.MutexExample()
 	basic.ConcurrencyExample()
+	fmt.Println("======================================")
+	basic.ChannelExample()
 
 }
