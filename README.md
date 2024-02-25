@@ -28,8 +28,8 @@ Where <file> is the name of your Go file.
 - [X] Data Structure
 - [X] Error Handling
 - [X] Goroutine and Concurrency
-- [ ] Channel and Context
-- [ ] Keyword search
+- [X] Channel and Context
+- [ ] Keyword search Programming
 - [ ] Test
 - [ ] Web Server
 - [ ] Rest API
