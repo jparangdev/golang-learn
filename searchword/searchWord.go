@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 )
 
-func run() {
+func Run() {
 
 }
 

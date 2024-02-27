@@ -1,8 +1,6 @@
 package main
 
-import (
-	"golang-learn/basic"
-)
+import "golang-learn/searchword"
 
 func main() {
 	//fmt.Println("======================================")
@@ -61,6 +59,8 @@ func main() {
 	//basic.ConcurrencyExample()
 	//fmt.Println("======================================")
 	//basic.ChannelExample()
-	basic.ContextExample()
+	//basic.ContextExample()
+	//fmt.Println("======================================")
+	searchword.Run()
 
 }
