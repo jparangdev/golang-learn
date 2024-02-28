@@ -2,11 +2,20 @@ package searchword
 
 import (
 	"fmt"
+	"os"
 	"path/filepath"
 )
 
 func Run() {
+	if len(os.Args) < 3 {
+		fmt.Println("Two or more runtime arguments ar required")
+		return
+	}
 
+	word := os.Args[1]
+	files := os.Args[2:]
+	fmt.Println("Target word:", word)
+	PrintAllFiles(files)
 }
 
 func GetFileList(path string) ([]string, error) {
