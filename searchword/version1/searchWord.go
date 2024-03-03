@@ -1,4 +1,4 @@
-package searchword
+package main
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 )
 
-func Run() {
+func main() {
 	if len(os.Args) < 3 {
 		fmt.Println("Two or more runtime arguments ar required")
 		return
