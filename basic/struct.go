@@ -41,7 +41,7 @@ func StructExample() {
 	// Print the properties of 'house'
 	fmt.Println("주소:", house.Address)
 	fmt.Printf("크기: %d평\n", house.Size)
-	fmt.Println("가격: %.2f억 원\n", house.Price)
+	fmt.Printf("가격: %.2f억 원\n", house.Price)
 	fmt.Println("타입:", house.Type)
 
 	// Initializing a variable of type User
