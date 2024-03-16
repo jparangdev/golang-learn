@@ -1,8 +1,6 @@
 package main
 
-import (
-	"golang-learn/basic"
-)
+import "golang-learn/basic"
 
 func main() {
 	//fmt.Println("======================================")
@@ -63,5 +61,6 @@ func main() {
 	//basic.ChannelExample()
 	//basic.ContextExample()
 	//fmt.Println("======================================")
-	basic.TestExample()
+	//basic.TestExample()
+	basic.BenchExample()
 }
