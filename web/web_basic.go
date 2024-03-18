@@ -17,10 +17,11 @@ func BarHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
-	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+	mux := http.NewServeMux()
+	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprint(w, "Hello Jparangdev")
 	})
-	http.HandleFunc("/bar", BarHandler)
+	mux.HandleFunc("/bar", BarHandler)
 
-	http.ListenAndServe(":3000", nil)
+	http.ListenAndServe(":3000", mux)
 }
