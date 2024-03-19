@@ -16,12 +16,13 @@ func BarHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hello %s, your ID is %d", name, id)
 }
 
-func main() {
+func MakeWebHandler() http.Handler {
 	mux := http.NewServeMux()
-	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		fmt.Fprint(w, "Hello Jparangdev")
-	})
 	mux.HandleFunc("/bar", BarHandler)
+	mux.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
+	return mux
+}
 
-	http.ListenAndServe(":3000", mux)
+func main() {
+	http.ListenAndServe(":3000", MakeWebHandler())
 }
