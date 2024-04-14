@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"github.com/gorilla/mux"
 	"github.com/unrolled/render"
+	"github.com/urfave/negroni"
 	"golang-learn/todolist/model"
 	"log"
 	"net/http"
@@ -13,9 +14,19 @@ import (
 
 var rd *render.Render
 var todoMap map[int]model.Todo
-var lastID int = 0
+var lastID = 0
 
 func main() {
+	rd = render.New()
+	m := MakeWebHandler()
+	n := negroni.Classic()
+	n.UseHandler(m)
+
+	log.Println("Started App")
+	err := http.ListenAndServe(":3000", n)
+	if err != nil {
+		panic(err)
+	}
 
 }
 
@@ -81,5 +92,25 @@ func RemoveTodoHandler(w http.ResponseWriter, r *http.Request) {
 			w.WriteHeader(http.StatusInternalServerError)
 			return
 		}
+	}
+}
+
+func UpdateTodoHandler(w http.ResponseWriter, r *http.Request) {
+	var updateTodo model.Todo
+	err := json.NewDecoder(r.Body).Decode(&updateTodo)
+	if err != nil {
+		log.Fatal(err)
+		w.WriteHeader(http.StatusBadRequest)
+		return
+	}
+
+	vars := mux.Vars(r)
+	id, _ := strconv.Atoi(vars["id"])
+	if todo, ok := todoMap[id]; ok {
+		todo.Name = updateTodo.Name
+		todo.Completed = updateTodo.Completed
+		rd.JSON(w, http.StatusOK, model.Success{true})
+	} else {
+		rd.JSON(w, http.StatusBadRequest, model.Success{false})
 	}
 }
