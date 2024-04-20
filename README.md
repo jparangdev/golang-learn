@@ -29,8 +29,8 @@ Where <file> is the name of your Go file.
 - [X] Error Handling
 - [X] Goroutine and Concurrency
 - [X] Channel and Context
-- [ ] Keyword search Programming
-- [ ] Test
-- [ ] Web Server
-- [ ] Rest API
-- [ ] Todo List
+- [X] Keyword search Programming
+- [X] Test
+- [X] Web Server
+- [X] Rest API
+- [X] Todo List
